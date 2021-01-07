@@ -1,0 +1,833 @@
+.body
+{
+    font-family: 'Varela Round', sans-serif;
+}
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.pd-y
+{
+    padding: 120px 0;
+}
+/* header home */
+.header
+{
+    
+    position:fixed;
+    width:100%;
+    z-index: 10;
+    background-color:#889999;
+}
+.clear
+{
+    clear: both;
+}
+.continer
+{
+    width: 80%;
+    margin:auto;
+}
+.header .logo
+{
+    width:40%;
+    
+    background:#889999;
+    float: left;
+}
+.header .logo img
+{
+    width:17%;
+    margin-top: 3px;
+}
+.header .nav
+{
+    width:60%;
+    
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+
+.header .nav > li 
+{
+    display: inline-block;
+   
+    text-align: center;
+}
+
+.header .nav > li  a
+{
+    color: #fff;
+    text-decoration: none;
+    padding:15px 10px ;
+    display: block;
+    font-size:14px;
+
+}
+
+.header .nav > li  a:after
+{
+    content:"";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: cadetblue;
+    margin:2px;
+    transition: 0.5s;
+}
+.header .nav > li >a:hover::after{
+    width:100%;
+}
+.header .nav > li >  a.active:after
+{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: cadetblue;
+    margin:2px;
+    transition: 0.5s;
+}
+.dropdown-menu
+{
+    position: absolute;
+    background: #6195ff;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    left:0%;
+    top:72%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s,visibility 0.5s;
+}
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    
+    visibility: visible;
+
+}
+.dropdown
+{
+    position: relative;
+}
+.dropdown-menu a
+{
+    color:#fff;
+    display: block;
+    padding:10px;
+    text-decoration: none;
+
+}
+
+/* 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+/* home section */
+.home 
+{
+    height: 100vh;
+    background-image: url('../images/7.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.hover-opacity
+{
+    transition: opacity .8s;
+}
+.hover-opacity:hover
+{
+    opacity: 0.5;
+}
+.home-content
+{
+   
+    position: absolute;
+    top:50%;
+    Left:50%;
+    transform: translate(-50%,-50%);
+    text-align : center;
+    width:65%;
+    
+   
+}
+.home .title
+{
+    color:#fff;
+    font-size:3.1em;
+    text-transform:uppercase;
+    
+}
+.home .home-text
+{
+    margin:20px 10px;
+
+    color:#fff;
+    letter-spacing: 5%;
+    line-height: 140%;
+    
+   
+
+    
+} 
+
+.home .btn
+{
+    width:100px;
+    
+    padding:10px 0;
+    border-radius: 5px;
+    border:0px;
+    cursor: pointer;
+    font-size: 14px;
+    margin:20px 0;
+}
+.home .btn-started {
+    margin-right: 10px;
+    background:#FFF;
+}
+.home .btn-learn
+{
+    background:#6195ff;
+    color:#fff;
+}
+
+
+/* about */
+/* portfilo */
+/* servies */
+/* prise */
+/* team */
+/* conect */
+/* 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+/* swction header */
+.section-header
+{
+    text-align: center;
+}
+.section-header .section-title
+{
+    font-size:35px;
+    text-transform:capitalize;
+    margin-bottom:10px;
+}
+.section-header .line
+{
+    display:block;
+    margin: 0 auto 70px auto;
+    width:70px;
+    height: 4px;
+    background-color:blue;
+}
+
+.about
+{
+    
+}
+.about-content
+{
+    overflow: hidden;
+}
+.about-iteam
+{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid aqua;
+    padding:50px 20px;
+
+}
+.about-iteam:hover .about-item-title
+{
+    color: antiquewhite;
+}
+.about-iteam.mg
+{
+    margin:0 5%;
+}
+
+.about-iteam .icon
+{
+    color:aqua;
+    margin-bottom: 10px;
+}
+.about-item-title
+{
+    text-transform: capitalize;
+    transition:color 0.5;
+    margin-bottom: 10px;
+}
+.about-item-desc
+{
+    list-style: height 1%;
+    margin-bottom: 10px;
+    color: #889999;
+}
+.about-item-link
+{
+    color:#6195ff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* /1111111111111111111111111111111111111111111 */
+
+.ltr-effect
+{
+    position: relative;
+}
+.ltr-effect:after
+{
+    position: absolute;
+    content:"";
+     width:0%;  
+    background: #333;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    transition:width 0.8s;
+    z-index: -1;
+
+}
+.ltr-effect:hover:after
+{
+    width: 100%;
+    
+}
+/* 11111111111111111111111111111111111111111111111111111111111111111111111111111 */
+
+.portfolio
+{
+    background: #f9f9f9;
+}
+.portfolio-content
+{
+    overflow: hidden;
+}
+.portfolio-item
+{
+    width:30%;
+    float: left;
+    margin-bottom: 50px;
+    position: relative;
+    padding:18px
+}
+.portfolio-item img{
+    width:100%;
+}
+.portfolio-item.mg
+{
+    margin:0 5%;
+}
+
+.portfolio-item .layer-content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 0;
+     visibility: hidden;
+    transition: opacity 0.8s;
+
+}
+ .portfolio-item:hover .layer-content
+{
+    opacity: 1;
+    visibility: visible;
+} 
+
+.layer-content .layer-info {
+    position: absolute;
+    
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    text-align: center;
+    
+}
+.layer-content-title
+{
+    color: #fff;
+    font-size:20px;
+    margin-bottom: 10px;
+    transition: top 0.5s;
+    position: relative;
+    top:10px;
+    transition-delay:0.3s ;
+    opacity: 0;
+
+}
+.layer-content a
+{
+    color: #fff;
+    position: relative;
+    top: 10px;
+    transition-delay: 0.3s;
+    opacity: 0;
+
+}
+
+.layer-content .category
+{
+    color:#6195ff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom:5px;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+.layer-info a{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-color:#6195ff;
+    position: relative;
+  
+    transition: top 0.8s;
+}
+.layer-info a i
+{
+    line-height:40px;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-color:#6195ff;
+    color: #fff;
+    /* ممكن نكتب نفس اللي فوق بدل خطوة زيادة */
+}
+.portfolio-item:hover .layer-content-title,
+.portfolio-item:hover .layer-content a,
+.portfolio-item:hover .layer-content .category
+{
+    top:0;
+    opacity: 1;
+}
+
+/* 1111111111111111111111111111111111111111111111111111111 */
+.offer-content
+{
+    overflow: hidden;
+}
+.offer-item
+{
+    float: left;
+    width:30%;
+    margin-bottom:30px;
+    border:1px solid #a8a8a8;
+    padding:20px 10px 30px 70px;
+    position: relative;
+}
+.offer-item.mg
+{
+    margin:0 5%;
+}
+.offer-item .icon
+{
+    position: absolute;
+    left:15px;
+    top:27px;
+    color:#6195ff;
+}
+.offer-item-title
+{
+    text-transform: capitalize;
+    margin-bottom:15px;
+    transition:color 0.5s;
+}
+.offer-item-desc
+{
+    text-transform: capitalize;
+    margin-bottom:15px;
+    color:#999;
+    line-height:1.6px;
+}
+.offer-item:hover .offer-item-title
+{
+    color:#fff;
+}
+/* 1111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+.servies
+{
+    background:#f9f9f9;
+}
+.servies-item
+{
+    float: left;
+    width:50%
+}
+
+.servies-item .section-header
+{
+    text-align: left;
+}
+.servies-item .section-header .line
+{
+    margin:0 0 70px 0;
+}
+
+.servies-item-desc
+{
+    padding-right: 20px;
+    font-size:20px;
+    margin-bottom:20px;
+    color:#999
+}
+.servies-list
+{
+    list-style: none;
+}
+.servies-list li
+{
+    margin-bottom:10px;
+    color:#999
+}
+.servies-list li i 
+{
+    border: 1px solid #6195ff;
+    color:#6195ff;
+    padding:7px 5px;
+    border-radius: 50%;
+
+}
+.servies-img img
+{
+    width:100%;
+}
+
+.servies-bollets
+{
+    list-style: none;
+    text-align: center;
+}
+.servies-bollets li
+{
+    width:10px;
+    height:10px;
+    background-color:#a8a8a8;
+    margin:10px 2px;
+    display: inline-block;
+    border-radius:50%;
+}
+.servies-bollets li.active
+{
+    background:#6195ff
+}
+.servies-bollets li:hover
+{
+    background:#6195ff
+}
+/* 111111111111111111111111111111111111111111111111 */
+.numbers
+{
+    position: relative;
+    background-image: url(../images/x\ gym.jpeg);
+    height: 300px;
+    /* الاتنين دول عشان الصورة تتحرك */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.numbers-items
+{
+    overflow: hidden;
+}
+
+.numbers-item
+{
+    width:25%;
+    text-align: center;
+    float: left;
+}
+
+.numbers-item .icon
+{
+    color:#6195ff;
+    margin-bottom:11px;
+}
+
+.numbers-item-title
+{
+    font-weight:bold;
+    font-size:30px;
+    margin-bottom: bottom 15px;
+    color:#fff;
+}
+.numbers-item-text
+{
+    color:#fff;
+}
+/* 11111111111111111111111111111111111111111111111111111111111111111 */
+.prise-plan
+{
+    overflow: hidden;
+}
+
+.prise-item
+{
+    width:30%;
+    float:left;
+    padding:20px 10px;
+    border:1px solid #a8a8a8;
+    text-align: center;
+}
+
+
+.prise-item.mg
+{
+    margin:0px 5%;
+}
+
+.prise-item-title
+{
+    text-transform: uppercase;
+    font-size:18px;
+    color:#999;
+    transition:color .05s;
+}
+
+.prise-permonth
+{
+    width:100px;
+    height:100px;
+    margin: 20px auto;
+    padding:20px 0px;
+    border: 2px solid #6195ff;
+    border-radius:50%;
+    transition:color .05s;
+}
+
+.prise-permonth .dollar
+{
+    font-size:30px;
+}
+.prise-permonth .month
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.prise-list {
+    list-style: none;
+}
+.prise-list li
+{
+    color:#999;
+    line-height:1.5
+}
+
+.prise-item-er
+{
+    background:none;
+    border:0;
+    display:block;
+    padding:10px;
+    margin:10px auto 0;
+    width:120px;
+    border:2px solid #6195ff;
+    color: #6195ff;
+}
+.tb-effect
+{
+    position: relative;
+}
+.tb-effect:after
+{
+    position: absolute;
+    content:"";
+     height:0%;  
+    background: #333;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    transition:height 0.8s;
+    z-index: -1;
+
+}
+.tb-effect:hover:after
+{
+    height: 100%;
+    
+}
+.prise-item:hover .prise-permonth
+{
+    color: #fff;
+}
+
+.prise-item:hover .prise-item-title
+{
+    color: blue;
+}
+
+/* 11111111111111111111111111111111111111111111111111111 */
+
+.test{
+    position: relative;
+    background-image:url('../images/background3.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+
+.test-content
+{
+    overflow: hidden;
+    padding:120px 0;
+    width:80%;
+    margin:auto;
+    
+}
+
+.test-item
+{
+    width: 50%;
+    color:#fff;
+    float: left;
+    
+}
+
+.test-item .text-top
+{
+    padding:10px 2px 40px 80px;
+    position: relative;
+    
+}
+
+.test-item .text-top img
+{
+    position: absolute;
+    left: 0;
+    top:-5px;
+    border-radius:50%;
+}
+
+.test-item .text-top h2
+{
+    margin-bottom:5px;
+}
+.test-item .text-top span
+{
+    color:#6195ff;
+}
+
+.test-item .text-top p
+{
+    line-height:1.5;
+    font-size:15px
+}
+/* 2111111111111111111111111111111111111111111111111111111 */
+.team-content
+{
+    overflow: hidden;
+}
+
+.team-item
+{
+    width:17%;
+    float: left;
+    background: #e8e8e8;
+    padding:10px;
+    text-align: center;
+    margin: 30px;
+    
+
+}
+
+.team-item .team-img{
+    width:90%;
+    margin:auto;
+    position: relative;
+}
+.team-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team-overlay a{
+    display: block;
+    width:27px;
+    height:27px;
+    background-color:aqua;
+    color: #fff;
+    margin-left: auto;
+    
+}
+
+
+.team-item .team-img img
+{
+    width:100%
+}
+
+.team-info-text
+{
+    color:#222;
+    font-size:12;
+    transition:color 0.5a;
+}
+.team-info-title
+{
+    color:#999;
+    text-transform: uppercase;
+    font-size:16px;
+    transition:color 0.5a;
+}
+
+.team-item:hover .team-overlay
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-item.tb-effect
+{
+    z-index: 1;
+}
+.team-item:hover .team-info-text
+{
+    color:#6195ff;
+}
+.team-item:hover .team-info-title
+{
+    color:#fff;
+}
+
+.footer{
+    background-color:#6195ff;
+    color:#fff;
+    text-align:center;
+    margin:auto;
+    height: 50px;
+    font-size: 28px;
+    display: block;
+    margin-top: 100px;
+
+}
